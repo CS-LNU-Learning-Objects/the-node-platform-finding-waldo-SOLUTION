@@ -2,12 +2,12 @@
  * The starting point of the application.
  *
  * @author Mats Loock
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 'use strict'
 
-const {TextCrawler} = require('./lib/text-crawler')
+const { TextCrawler } = require('./lib/text-crawler')
 
 // Instantiate a TextCrawler object passing a regular
 // expression literal (i meaning case-insensitive).
