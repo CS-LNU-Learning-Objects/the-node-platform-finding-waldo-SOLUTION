@@ -1,12 +1,16 @@
 {
-  "name": "exercise-finding-waldo",
-  "version": "1.2.0",
-  "description": "Exercise: Finding Waldo",
+  "name": "finding-waldo",
+  "version": "1.0.0",
+  "description": "Solution proposal of the exercise 'Finding Waldo'",
   "main": "app.js",
   "scripts": {
-    "lint": "standard | snazzy",
-    "lint:fix": "standard --fix",
-    "start": "node app.js"
+    "start": "node app.js",
+    "lint": "npx eslint . || exit 0",
+    "lint:fix": "npx eslint . --fix || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CS-LNU-Learning-Objects/the-node-platform-exercise-rotten-tomatoes-SOLUTION"
   },
   "author": "Mats Loock <mats.loock@lnu.se>",
   "license": "MIT",
@@ -14,13 +18,15 @@
     "fs-extra": "^8.1.0"
   },
   "devDependencies": {
-    "snazzy": "*",
-    "standard": "*"
+    "@lnu/eslint-config": "^1.0.6",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsdoc": "^21.0.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   },
-  "standard": {
-    "env": {
-      "node": true,
-      "es6": true
-    }
+  "eslintConfig": {
+    "extends": "@lnu"
   }
 }

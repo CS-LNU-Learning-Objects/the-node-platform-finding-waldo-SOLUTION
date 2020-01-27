@@ -10,7 +10,7 @@ You can find the files to search in this repo.
 
 ## Requirements
 
-- Create a class `TextCrawler`, inherited from `EventEmitter`, that have two public methods, `addFile` and `find`.
+- Create a class `TextCrawler`, inherited from `EventEmitter`, that has two public methods, `addFile` and `find`.
 - There must be a constructor making it possible to pass a regular expression when instantiating an object of the class.
 - The method `addFile` takes a string with a file path to add files to search.
 - The method `find` searches for the phrase "waldo" in all the files and emits the event "found" whenever it finds the phrase in a file. If an error occurs, be sure to emit an “error” event.
@@ -18,12 +18,12 @@ You can find the files to search in this repo.
 
 ## Example use and output
 
-Example of command line to run the application.
+Example of the command line to run the application.
 
 ```shell
 npm start
 
-> exercise-finding-waldo@1.2.0 start /exercise-finding-waldo
+> finding-waldo@1.0.0 start /finding-waldo
 > node app.js
 
 ERROR: ENOENT: no such file or directory, open 'file5.json'
